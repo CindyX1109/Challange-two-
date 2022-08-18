@@ -1,10 +1,82 @@
-:root {
-    --primary-color: white; 
-    --Secondary-color:#DEB887;
-    --tertiary-color:#B0C4DE;
+body{
+    color: #FFDEAD;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #4682B4;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header{
+    padding: var(--bottom-padding) 50px;
+    display: flex;
+    top:50px;
+    justify-content: space-around;
+    font-size: 50px;
+    }
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 40px;
+    text-align: center;
 }
 
+#about-me{
+    border-left: 20px solid #F4A460;
+    padding-left: 10px;
+   
+}
 
+#horiseon{
+    display:block;
+    border-width: 10px;
+    border-style:dotted;
+    border-color: #F4A460;
+}
 
-
-
+#password{
+    display:block;
+    border-width: 10px;
+    border-style:dotted;
+    border-color: #F4A460;
+  
+}
+#contact-me{
+    display:block;
+    border-width: 10px;
+    border-style:dotted;
+    border-color: #F4A460;
+}
+@media screen and (max-width:1240px) {
+    body{
+        overflow: hidden;
+    }
+    .me h3, .work h3, .contact h3{
+        text-align: center;
+    }
+    .me div {
+        padding-left: 5px;
+        justify-content: center;
+    }
+    .me div article{
+        margin:0px;
+        padding:15px;
+    }
+}
+@media screen and (max-width:768px) {
+    section{
+        padding:0px;
+    }
+    .challenge{
+        width: 500px;
+        height: 400px;
+    }
+}
+@media screen and (max-width:575px) {
+    section{
+        padding:0px;
+    }
+    .challenge{
+        width: 0px;
+        height: 0px;
+    }
+}
